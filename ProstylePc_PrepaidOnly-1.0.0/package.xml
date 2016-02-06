@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ProstylePc_PrepaidOnly</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL) V3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Restrict COD payment using custom attribute.</summary>
+    <description>Restrict the Cash on Delivery payment method based on custom attribute value. You have to create an attribute with name "prepaid_only" with Catalog Input Type for Store Owner YES/NO. If you set yes the COD will not be available as a payment method also please note that this extension requires an existing phoenix cash on delivery payment method on your store.</description>
+    <notes>You have to create an attribute with Attribute Code: prepaid_only and Catalog Input Type for Store Owner: Yes/No. Please note that this extension requires an existing phoenix cash on delivery payment method on your store</notes>
+    <authors><author><name>B Praveen</name><user>BPRAVEEN</user><email>bpraveen.in@gmail.com</email></author></authors>
+    <date>2016-02-06</date>
+    <time>19:31:19</time>
+    <contents><target name="magelocal"><dir name="ProstylePc"><dir name="PrepaidOnly"><dir name="Model"><file name="Observer.php" hash="11d2f9708c6614c7962fa11f487bbfab"/></dir><dir name="etc"><file name="config.xml" hash="5830cc3946169369961028fabd0b7121"/></dir></dir></dir></target><target name="mageetc"><dir name="module"><file name="ProstylePc_PrepaidOnly.xml" hash=""/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>7.0.3</max></php><package><name>Phoenix_CashOnDelivery</name><channel>community</channel><min>1.4</min><max>1.9</max></package></required></dependencies>
+</package>
